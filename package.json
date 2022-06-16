@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start" : "node server.js" , 
     "back": "nodemon server",
     "front": "cd client && npm start",
-    "start": "concurrently \"npm run front\" \"npm run back\"",
+    "dev": "concurrently \"npm run front\" \"npm run back\"",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "author": "",
