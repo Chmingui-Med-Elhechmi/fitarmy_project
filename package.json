@@ -10,6 +10,9 @@
     "dev": "concurrently \"npm run front\" \"npm run back\"",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
+  "engines": {
+    "node": "16.13.1"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
