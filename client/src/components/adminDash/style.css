@@ -1,0 +1,172 @@
+.dash a {
+  cursor: pointer;
+}
+
+.dash ul {
+  list-style: none;
+}
+
+.dash .wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.dash nav {
+  width: 200px;
+  background: #404040;
+}
+
+.dash nav header {
+  position: relative;
+  height: 80px;
+  padding: 20px 0 0 15px;
+  font-size: 16px;
+  color: #fff;
+  background: darken(#404040, 5%);
+}
+
+.dash nav header span {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  border: 1px solid #fff;
+}
+
+.dash nav header span:before {
+  content: "\f007";
+  font: normal 20px fontawesome;
+  top: 7px;
+  left: 9px;
+}
+
+.dash nav header a:before {
+  content: "\f08b";
+  font: normal 20px fontawesome;
+  top: 28px;
+  right: 15px;
+}
+
+.dash nav ul span {
+  display: block;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  border-bottom: 1px solid darken(#404040, 5%);
+}
+
+.dash nav ul a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 17px 50px;
+  color: #fff;
+  border-bottom: 1px solid darken(#404040, 5%);
+}
+
+.dash nav ul a:hover,
+.dash nav ul a.active {
+  background: lighten(#404040, 7.5%);
+}
+.dash nav ul a:before {
+  font: normal 16px fontawesome;
+  top: 15px;
+  left: 18px;
+}
+.dash nav ul li:nth-child(2) a:before {
+  content: "\f00a";
+}
+.dash nav ul li:nth-child(3) a:before {
+  content: "\f012";
+}
+.dash nav ul li:nth-child(4) a:before {
+  content: "\f018";
+}
+.dash nav ul li:nth-child(5) a:before {
+  content: "\f024";
+}
+.dash nav ul li:nth-child(6) a:before {
+  content: "\f0c3";
+}
+.dash nav ul li:nth-child(7) a:before {
+  content: "\f09b";
+}
+.dash nav ul li:nth-child(8) a:before {
+  content: "\f0fa";
+}
+.dash nav ul li:nth-child(10) a:before {
+  content: "\f002";
+}
+.dash nav ul li:nth-child(11) a:before {
+  content: "\f085";
+}
+.dash nav ul li:nth-child(12) a:before {
+  content: "\f08b";
+}
+.dash main {
+  flex: 1;
+  padding: 25px;
+  background: #f5f5f5;
+}
+.dash main h1 {
+  height: 80px;
+  margin: -25px -25px 25px -25px;
+  padding: 0 25px;
+  line-height: 76px;
+  font-size: 24px;
+  font-weight: 400;
+  background: #ddd;
+}
+.dash .flex-grid {
+  display: flex;
+}
+.dash .flex-grid > div {
+  flex: 1;
+  margin: 0 20px 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.dash .flex-grid > div:last-child {
+  margin-right: 0;
+}
+.dash .flex-grid h2 {
+  margin: -15px -15px 15px -15px;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+}
+.dash .flex-grid li {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 0 0 0 25px;
+  /* list-style-type: none; */
+}
+.dash .flex-grid li:before {
+  content: "\f00c";
+  font: normal 16px fontawesome;
+  top: 0;
+  left: 0;
+  color: #999;
+}
+
+/*
+** Media Queries
+***********************************************************/
+
+@media (max-width: 1000px) {
+  .dash .flex-grid {
+    flex-direction: column;
+  }
+
+  .dash .flex-grid > div {
+    margin-right: 0;
+  }
+}
+
+.dash td {
+  border: 1px solid black;
+  padding: 10px;
+}
