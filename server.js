@@ -15,7 +15,7 @@ connectDB();
 app.use(express.json());
 app.use(express.static(__dirname));
 app.use("/user", require("./Routers/userRouters"));
-app.use("/product", require("./Routers/productRouters"));
+//app.use("/product", require("./Routers/productRouters"));
 app.use("/uploads", express.static(path.join(__dirname, "../", "/uploads")));
 
 //deployment
