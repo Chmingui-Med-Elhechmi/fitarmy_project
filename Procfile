@@ -1,1 +1,1 @@
-web: node partie_back-end/server.js
+web: node server.js
